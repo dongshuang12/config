@@ -1,0 +1,9 @@
+#注册中心
+eureka.client.service-url.defaultZone=http://172.25.154.131:8761/eureka/
+eureka.instance.prefer-ip-address=true
+
+#数据库配置
+spring.datasource.url=jdbc:oracle:thin:@172.25.154.111:1521:PPRD
+spring.datasource.username=arch2
+spring.datasource.password=pccw1234
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
