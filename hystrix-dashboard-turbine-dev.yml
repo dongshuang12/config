@@ -1,0 +1,17 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: hystrix-dashboard-turbine
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG
+      profile: dev
+      
+turbine:
+  app-config: sysmanager
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
